@@ -1,0 +1,95 @@
+
+<header>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Projets</a></li>
+        <li><a href="#">Utilisateurs</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <h1>Bienvenue sur notre application de gestion de projets</h1>
+    <p>Sur cette page, vous pourrez consulter les informations sur les projets et les utilisateurs, ainsi que gérer les projets et les tâches associées.</p>
+    <article>
+      <h2>Projets</h2>
+      <p>Vous pouvez consulter les détails sur les projets en cliquant sur l'onglet Projets dans le menu de navigation. Vous pourrez également créer de nouveaux projets en cliquant sur le bouton Créer un nouveau projet.</p>
+      <h2>Utilisateurs</h2>
+      <p>Vous pouvez consulter les détails sur les utilisateurs en cliquant sur l'onglet Utilisateurs dans le menu de navigation. Vous pourrez également vous enregistrer ou vous connecter en cliquant sur les boutons correspondants.</p>
+    </article>
+  </main>
+  
+  <footer>
+    <p>Copyright &copy; 2023, notre application de gestion de projets</p>
+  </footer>
+  <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="app.css">
+    <title>Gestion de projet</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Gestion de projet</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Projets</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Utilisateurs</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 offset-md-3">
+            <h1 class="text-center">Enregistrement</h1>
+            <form id="register-form">
+              <div class="form-group">
+                <label for="username">Nom d'utilisateur</label>
+                <input type="text" class="form-control" id="username" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" required>
+              </div>
+              <div class="form-group">
+                <label for="password">Mot de passe</label>
+                <input type="password" class="form-control" id="password" required>
+              </div>
+              <div class="form-group">
+                <label for="confirm-password">Confirmer le mot de passe</label>
+                <input type="password" class="form-control" id="confirm-password" required>
+              </div>
+              <button type="submit" class="btn btn-primary btn-block">Enregistrer</button>
+            
+            </form>
+          </div>
+          <form id="login-form">
+            <div class="form-group">
+              <label for="username">Nom d'utilisateur</label>
+              <input type="text" class="form-control" id="username" required>
+            </div>
+            <div class="form-group">
+              <label for="password">Mot de passe</label>
+              <input type="password" class="form-control" id="password" required>
+            </div>           
+            <button type="submit" class="btn btn-primary btn-block">Se connecter</button>
+          </form>
+          
+        
+
+  
