@@ -26,14 +26,14 @@ connection.connect((err) => {
   }
 });
 
-// Routes
+
 const tasksRouter = require("./routes/tasks");
 app.use("/tasks", tasksRouter);
 
 const projectsRouter = require("./routes/projects");
 app.use("/pojects", projectsRouter);
 
-// Lancement du serveur
+
 app.listen(port, () => {
   console.log(`Serveur lancé sur le port ${port}`);
 });
